@@ -1,0 +1,8 @@
+a = int(input("Suv:"))
+b = input("Text:")
+alfavit = 'abcdefg'
+cesar  = ''
+for i in b:
+    cesar += alfavit[(alfavit.index(i) + a) % len(alfavit)]
+    
+print (cesar)
